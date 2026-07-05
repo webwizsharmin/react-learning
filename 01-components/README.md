@@ -1,16 +1,77 @@
-# React + Vite
+# Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Components is a reusable UI element. Every components is isolated from another elements. But a component can be a button or an etire page.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## why do we use it?
 
-## React Compiler
+we use components in our app several reason. Such as,
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Reusabilty: write code once and reuse it multiple times across differnt pages.
 
-## Expanding the ESLint configuration
+- Isolation and Encapsulation: Each component holds its own layout, style, logic. if we change any part it will not break another part of our app.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Optimized performance
+- State and Data Mangagement
+- Maintainablity and Readability
+
+---
+
+## Syntax
+
+- just like JavaScript function but the name of function will start capital letter. Such as, "App" instead of "app".
+
+- always return jsx markup
+
+## Example
+
+```markdown
+function App() {
+return (
+<section>
+<h1>Gallary</h1>
+<p>lorem ipsum is not being torem </p>
+</section>
+)
+}
+```
+
+---
+
+## Common mistakes
+
+- Prop Drilling
+- Overusing State(Duplicating Data)
+- Over Engineering and Premature Abstraction
+- Missing or incorrect props
+- Direct State Mutation
+
+---
+
+## Best practices
+
+- A component should ideally do only one thing, making it highly, reusable, testable, and easy to maintain
+
+---
+
+## When not to use it
+
+- if JSX is small
+- used only once
+- if splitting it introduces prmature abstraction
+- unnecessary prop drilling without adding any structural or functional value.
+
+---
+
+## What I learn
+
+- syntax
+- best practice
+- when not to use
+
+---
+
+## Things to review
+
+- how to use it in real world applications.
