@@ -3,6 +3,7 @@ export function Profile() {
     <img
       src="https://react.dev/images/docs/scientists/MK3eW3As.jpg"
       alt="Katherin Johnson"
+      className=" rounded-full"
     />
   );
 }
