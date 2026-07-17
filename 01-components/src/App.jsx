@@ -1,21 +1,41 @@
-import Card from "./myexperiment/experiment1";
-import { ProfileCard } from "./examples/examples2";
-import { ProductCard } from "./examples/example3";
+import { ProductCard } from "./myexperiment/productCard1";
+
+const products = [
+  {
+    title: "Coffee Bean",
+    image: "/p2.jpg",
+    description: "Extra fresh coffee bean from Belgium",
+    price: 50,
+  },
+  {
+    title: "Dark Roast",
+    image: "/p2.jpg",
+    description: "Strong dark roast beans",
+    price: 60,
+  },
+  {
+    title: "Coffee Bean",
+    image: "/p2.jpg",
+    description: "Extra fresh coffee bean from Belgium",
+    price: 50,
+  },
+  {
+    title: "Coffee Bean",
+    image: "/p2.jpg",
+    description: "Extra fresh coffee bean from Belgium",
+    price: 50,
+  },
+];
 export default function App() {
   return (
-    <section>
-      <Card />
-      <ProfileCard
-        name="Katherine Johnson"
-        image="https://react.dev/images/docs/scientists/MK3eW3As.jpg"
-        description="This is my first react component"
-      />
-      <ProductCard
-        title="Coffee Beans"
-        image="./p2.jpg"
-        description=" extra fresh coffee from brazil."
-        price="50"
-      />
-    </section>
+    <div>
+      {products.map((product, index) => (
+        <ProductCard
+          key={index}
+          {...product}
+          onBuy={() => alert(`${product.title} added to cart`)}
+        />
+      ))}
+    </div>
   );
 }
