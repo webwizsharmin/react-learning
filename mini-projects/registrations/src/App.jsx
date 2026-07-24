@@ -1,5 +1,14 @@
+import { Register } from "./auth/register";
+
 function App() {
-  return <h1 className=" text-3xl text-green-900 font-bold">Hello world!</h1>;
+  return (
+    <div>
+      <Register
+        title="Getting Started"
+        description={`Already have an account? Sign in`}
+      />
+    </div>
+  );
 }
 
 export default App;
