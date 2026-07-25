@@ -1,4 +1,4 @@
-export function Reg({ title, description }) {
+export function RegistrationForm({ title, description }) {
   return (
     <div className="w-full max-w-md mx-auto p-6">
       <h2 className="text-3xl font-bold mb-2">{title}</h2>
@@ -88,7 +88,7 @@ export function Reg({ title, description }) {
           type="submit"
           className=" w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white"
         >
-          Sign In
+          Sign Up
         </button>
 
         <div className="flex items-center my-2">

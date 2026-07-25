@@ -1,9 +1,9 @@
-import { Reg } from "./experiment/reg";
+import { RegistrationForm } from "./experiment/reg";
 
 function App() {
   return (
     <div>
-      <Reg
+      <RegistrationForm
         title="Getting Started"
         description={`Already have an account? Sign in`}
       />
