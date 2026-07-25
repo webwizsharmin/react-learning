@@ -1,9 +1,9 @@
-import { Register } from "./auth/register";
+import { Reg } from "./experiment/reg";
 
 function App() {
   return (
     <div>
-      <Register
+      <Reg
         title="Getting Started"
         description={`Already have an account? Sign in`}
       />
