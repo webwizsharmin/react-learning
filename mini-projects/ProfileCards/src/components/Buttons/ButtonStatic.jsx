@@ -1,16 +1,19 @@
-export function ButtonStatic() {
-  const baseStyles = "rounded px-4 py-2 font-medium text-white";
-
-  const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700",
-    danger: "bg-red-600 text-white hover:bg-red-700",
-    success: "bg-green-600 text-white hover:bg-green-700",
-  };
+function Button() {
   return (
-    <div className="flex flex-col gap-6">
-      <button className={baseStyles + " " + variants.primary}>Save</button>
-      <button className={baseStyles + " " + variants.success}>Done</button>
-      <button className={baseStyles + " " + variants.danger}>Delete</button>
+    <div className="flex items-center justify-center h-screen bg-gray-100 gap-6">
+      <button className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 ring-blue-500 focus:ring-offset-2">
+        Primary
+      </button>
+
+      <button className="px-4 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700 focus:ring-2 ring-green-500 focus:ring-offset-2">
+        Success
+      </button>
+
+      <button className="px-4 py-2 rounded-xl bg-red-600 text-white hover:bg-red-700 focus:ring-2 ring-red-500 focus:ring-offset-2">
+        Danger
+      </button>
     </div>
   );
 }
+
+export default Button;
