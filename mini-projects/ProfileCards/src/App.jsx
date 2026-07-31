@@ -1,5 +1,5 @@
 import Button from "./components/Buttons/ButtonR";
-import Input from "./components/UI/inputs";
+import Input from "./components/UI/input1";
 function App() {
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 gap-6 p-6">
