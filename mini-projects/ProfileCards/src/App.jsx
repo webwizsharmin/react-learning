@@ -1,5 +1,6 @@
 import Button from "./components/Buttons/ButtonR";
 import Input from "./components/UI/input1";
+import Card from "./components/ProfileCards/ProfileCard3";
 function App() {
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 gap-6 p-6">
@@ -14,6 +15,21 @@ function App() {
       <Button variant="warning">Archive</Button>
       <Button variant="outline">Back</Button>
       <Button variant="ghost">View Details</Button>
+      <Card
+        title="John Doe"
+        subtitle="Project Manager"
+        description="Managing Clientflow Project"
+        actions={
+          <>
+            <Button variant="primary" size="sm">
+              Edit
+            </Button>
+            <Button variant="danger" size="sm">
+              Delete
+            </Button>
+          </>
+        }
+      />
       <Input
         type="email"
         label="Client Email"
