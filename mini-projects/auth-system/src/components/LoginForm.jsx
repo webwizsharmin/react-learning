@@ -11,7 +11,7 @@ export default function LoginForm({ onSubmit }) {
     const newErrors = {};
     if (!email) {
       newErrors.email = "Email is required";
-    } else if (!/\s+@\s+\.\s+/.test(email)) {
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
       newErrors.email = "Invalid email address";
     }
 
